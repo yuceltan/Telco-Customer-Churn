@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
+
+# Outputs
+outputs/models/*.pkl
+outputs/models/*.joblib
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
