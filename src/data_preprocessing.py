@@ -8,8 +8,7 @@ from config import RANDOM_STATE, TEST_SIZE
 
 
 def load_data(file_path):
-
-    df = pd.read_csv(r'C:\Users\Yuceltan Ebiri\PycharmProjects\Telco-Customer-Churn\data\raw\WA_Fn-UseC_-Telco-Customer-Churn.csv')
+    df = pd.read_csv(file_path)
     return df
 
 

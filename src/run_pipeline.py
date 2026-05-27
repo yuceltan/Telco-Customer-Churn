@@ -1,5 +1,5 @@
 import sys
-import joblib
+from joblib import dump
 
 from config import (
     DATA_PATH,
@@ -77,7 +77,7 @@ def main():
     print(f"\nBest model selected by ROC-AUC: {best_model_name}")
 
     model_path = MODELS_DIR / "best_churn_model.joblib"
-    joblib.dump(best_model, model_path)
+    dump(best_model, model_path)
 
     print(f"Best model saved to: {model_path}")
 
