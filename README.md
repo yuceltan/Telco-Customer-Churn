@@ -73,7 +73,7 @@ telco-churn-xai/
 │   └── raw/
 │
 ├── notebooks/
-│   └── telco_churn_xai_report.ipynb
+│   └── telcoNotebook.ipynb
 │
 ├── outputs/
 │   ├── figures/
@@ -91,3 +91,42 @@ telco-churn-xai/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
+
+## How to Run
+
+1. Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the full pipeline:
+
+```bash
+python src/run_pipeline.py
+```
+
+3. Open the notebook report:
+
+```text
+telcoNotebook.ipynb
+```
+
+## Main Outputs
+
+The project generates:
+
+- Model comparison metrics
+- Confusion matrices
+- ROC curves
+- Precision-recall curves
+- Permutation feature importance
+- SHAP summary plots
+- SHAP local waterfall explanation
+- Counterfactual what-if analysis
+
+## Authors
+
+Yücel Tan Ebiri  
+Szymon Grabowski
